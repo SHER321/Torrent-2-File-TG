@@ -1,4 +1,4 @@
-"""ThumbNail utilities, © @AnyDLBot"""
+"""ThumbNail utilities, © @RENAME_NGY_BOT"""
 
 
 import os
@@ -45,7 +45,7 @@ async def save_thumb_nail(client, message):
         os.remove(downloaded_file_name)
         await ismgs.edit(
             "Custom video / file thumbnail saved. " + \
-            "This image will be used in the upload, till /delthumb."
+            "This image will be used in the upload, till /delthumb. Join : @NGYBOTS"
         )
     else:
         await message.edit("Reply to a photo to save custom thumbnail")
@@ -63,4 +63,4 @@ async def clear_thumb_nail(client, message):
     ismgs = await message.reply_text("processing ...")
     if os.path.exists(thumb_image_path):
         os.remove(thumb_image_path)
-    await ismgs.edit("✅ Custom thumbnail cleared succesfully.")
+    await ismgs.edit("✅ Custom thumbnail cleared succesfully. @NGY_BOTS.")
